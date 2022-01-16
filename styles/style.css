@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #E5E5E5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.header__navigation{
+    flex-grow: 1;
+}
+.header__navigation-list{
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav-item{
+    padding: 10px;
+}
+
+.header__btn{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #423F3E;
+    color: #FFFFFF;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__header{
+    padding: 15px 50px;
+}
+
+.about__text{
+    padding: 15px 55px;
+    align-self: center;
+}
+
+
+.articles{
+    display: flex;
+    align-items: center;
+}
+
+.article__info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.articles__header{
+    padding: 15px 50px;
+}
+
+.articles__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px 20px 15px 55px;
+}
+
+.article__link-img{
+    margin: 3px;
+}
+
+.articles__container{
+    display: flex;
+}
+
+.articles__link{
+    display: flex;
+    align-items: center;
+}
+
+.articles__img{
+    width: 30%;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.jobs{
+    display: flex;
+    width: 100%;
+}
+
+.jobs__conteiner{
+    flex-grow: 1;
+    width: 50%;
+}
+.jobs__list{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.jobs__first-column{
+    width: 50%;
+}
+
+.jobs__second-column{
+    width: 50%;
+}
+
+.jobs__item{
+    padding: 10px 30px;
+}
+
+.examples{
+    display: flex;
+    align-items: center;
+}
+
+.comments__container {
+    display: flex;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__logo{
+    flex-grow: 1;
+}

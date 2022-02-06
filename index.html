@@ -1,64 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<h1>h1. Bootstrap heading</h1>, initial-scale=1.0">
-    <title>Simple Budget App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<div>
-    <div class="my-0 container d-flex flex-column gap-2">
-        <h2 class="my-2">Budget planner</h2>
-            <p class="rounded text-white bg-primary primary d-flex m-0 p-3 align-items-center">
-                <span class="flex-grow-1">Budget: $2000</span>
-                <button class="text-white btn p-0" type="button">Edit</button>
-            </p>
-            <p class="text-white bg-primary p-3 m-0 rounded">Remaining: $1040</p>
-            <p class="text-white bg-primary p-3 m-0 rounded">Spent so far: $960</p>
-    </div>
-    <div class="my-0 container">
-        <h2 class="my-2">Expenses</h2>
-        <input type="text" class="form-control my-2 p-1" id="formGroupExampleInput" placeholder="Search expense ...">
-        <ul class="list-group">
-            <li class="px-1 gap-1 list-group-item d-flex justify-content-start align-items-center">
-              <span class="flex-grow-1">Shopping</span>
-              <span class="badge bg-primary rounded-pill">$50</span>
-              <button type="button" class="btn-close px" aria-label="Close"></button>
-            </li>
-            <li class="px-1 gap-1 list-group-item d-flex justify-content-start align-items-center">
-              <span class="flex-grow-1">Holiday</span>
-              <span class="badge bg-primary rounded-pill">$300</span>
-              <button type="button" class="btn-close px" aria-label="Close"></button>
-            </li>
-            <li class="px-1 gap-1 list-group-item d-flex justify-content-start align-items-center">
-              <span class="flex-grow-1">Transportation</span>
-              <span class="badge bg-primary rounded-pill">$70</span>
-              <button type="button" class="btn-close px" aria-label="Close"></button>
-            </li>
-            <li class="px-1 gap-1 list-group-item d-flex justify-content-start align-items-center">
-                <span class="flex-grow-1">Fuel</span>
-                <span class="badge bg-primary rounded-pill">$40</span>
-                <button type="button" class="btn-close px" aria-label="Close"></button>
-              </li>
-              <li class="px-1 gap-1 list-group-item d-flex justify-content-start align-items-center">
-                <span class="flex-grow-1">Child Care</span>
-                <span class="badge bg-primary rounded-pill">$50</span>
-                <button type="button" class="btn-close" aria-label="Close"></button>
-              </li>
-          </ul>
-    </div>
-    <div class="container d-flex flex-column justify-content-between gap-2">
-        <h2 class="my-2">Add expense</h2>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name ...">
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter cost ...">
-        <div class="d-grid">
-            <button class="btn btn-primary" type="button">Save</button>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo header__logo">
+                <img class="img header__img" src="assets/images/header-logo.png" alt="logo">
+            </div>
+            <nav class="navigation header__navigation">
+                <ul class="navigation-list header__navigation-list">
+                    <li class="nav-item header_nav-item"><a href="">Product</a></li>
+                    <li class="nav-item header_nav-item"><a href="">About</a></li>
+                    <li class="nav-item header_nav-item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="btn header__btn">
+                <button class="header__btn">Download Now</button>
+            </div>
         </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="about">
+                <h1 class="about__header">
+                    Fast and powerful, just like your work
+                </h1>
+                <p class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.            </p>
+            </section>
+            <section class="articles">
+                <div class="article__info">
+                    <h2 class="articles__header">Nulla commodo aliqua aliqua ut</h2>
+                    <div class="articles__container">
+                        <p class="articles__text">
+                            Lorem quis sunt magna dolor consectetur aliqua officia laborum reprehenderit
+                            <a href="" class="articles__link">
+                                Read more
+                                <img class="article__link-img" src="assets/images/articles-arrow.png" alt="arrow">
+                            </a>
+                        </p>
+                        <p class="articles__text">
+                            Lorem quis sunt magna dolor consectetur aliqua officia laborum reprehenderit
+                            <a href="" class="articles__link">
+                                Read more
+                                <img class="article__link-img" src="assets/images/articles-arrow.png" alt="arrow">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <img class="articles__img" src="assets/images/kitty.jpg" alt="kitty">
+            </section>
+            <section class="jobs">
+                <div class="jobs__container">
+                    <h3 class="jobs__header">
+                        Nulla ut ea
+                    </h3>
+                    <p class="jobs__text">
+                        Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt
+                    </p>
+                </div>
+                <ul class="jobs__list">
+                    <div class="jobs__first-column">
+                        <li class="jobs__item">Graphic Design</li>
+                        <li class="jobs__item">Branding</li>
+                        <li class="jobs__item">UX Design</li>
+                        <li class="jobs__item">Coding</li>
+                    </div>
+                    <div class="jobs__second-column">
+                        <li class="jobs__item">Prototyping</li>
+                        <li class="jobs__item">Back-End</li>
+                        <li class="jobs__item">Webflow</li>
+                    </div>
+                </ul>
+            </section>
+            <section class="examples">
+                <div class="exapmles__container">
+                    <h4 class="examples__header">
+                        Where teams design together
+                    </h4>
+                    <p class="examples__text">
+                        Lorem quis sunt magna dolor consectetur aliqua officia laborum reprehenderit
+                    </p>
+                </div>
+                <div class="examples__pictures">
+                    <img class="examples__img" src="/assets/images/butt-and-cat.jpg" alt="example">
+                    <img class="examples__img" src="/assets/images/dog.jpg" alt="example">
+                    <img class="examples__img" src="/assets/images/kitty.jpg" alt="example">
+                </div>
+            </section>
+            <section class="comments">
+                <h2 class="comments__header">
+                    Nulla commodo aliqua aliqua ut
+                </h2>
+                <div class="comments__container">
+                    <article class="comments__article">
+                        Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor qui.
+                        <div class="comments__commentator">Ralph Richards</div>
+                        <div class="comments__job">UX Designer</div>
+                    </article>
+                    <article class="comments__article">
+                        Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor qui.
+                        <div class="comments__commentator">Angel Wilson</div>
+                        <div class="comments__job">UX Designer</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        </div>
+    <div class="container">
+        <footer class="footer">
+            <div class="footer__logo-container">
+                <img src="assets/images/figma-logo.png" alt="footer-logo" class="footer__logo">
+            </div>
+            <div class="footer_contacts">
+                <div class="footer__contacts-name">cillum incididunt</div>
+                <div class="footer__socials">
+                    <img class="footer__link" src="assets/images/in-icon.png" alt="link-icon">
+                    <img class="footer__link" src="assets/images/twitter-icon.png" alt="link-icon">
+                    <img class="footer__link" src="assets/images/fb-icon.png" alt="link-icon">
+                    <img class="footer__link" src="assets/images/inst-icon.png" alt="link-icon">
+                </div>
+                <div class="footer__text">Nostrud aliquip laboris</div>
+                <div class="footer__copyright">&#169 2020 Wirefigma</div>
+            </div>
+        </footer>
     </div>
 </body>
-
 </html>
